@@ -9,9 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Circle().fill(
+     VStack{
+           Circle().fill(
             Color.blue
         ).padding()
+            Circle().fill(
+            Color.red
+        ).padding()
+     }
     }
 }
 
