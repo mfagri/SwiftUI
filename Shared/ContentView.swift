@@ -9,13 +9,10 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-     VStack{
-           Circle().fill(
-            Color.blue
-        ).padding()
-            Circle().fill(
-            Color.red
-        ).padding()
+     ZStack{
+    //    Color(.blue).edgesIgnoringSafeArea(.all)
+    LinearGradient(gradient: Gradient(colors: [.blue,.white]), startPoint:.topLeading, endPoint: .bottomTrailing)
+    .edgesIgnoringSafeArea(.all)
      }
     }
 }
